@@ -2,7 +2,7 @@
     <div>
         <head-top></head-top>
         <div class="edit_container">
-        	<quill-editor v-model="content"
+        	<quill-editor
                 ref="myQuillEditor"
                 class="editer"
                 :options="editorOption"
@@ -24,7 +24,7 @@
             return {
                 content: '<h3>文本编辑</h3>',
 			    editorOption: {
-			        
+
 		        }
             }
         },
